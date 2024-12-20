@@ -5,16 +5,53 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #2ECC71;
+        nav {
+            background-color: #2ECC71;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Money Wala</h1>
-    <p>Facilitating offline money exchanges with ease through online interaction.</p>
+    <nav>
+        <div><a href="#">Money Wala</a></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Welcome to Money Wala</h1>
+        <p>Facilitating offline money exchanges with ease through online interaction.</p>
+    </div>
 </body>
+    <div id="about" class="content">
+    <h2>About Us</h2>
+    <p>Money Wala connects people who need to exchange money offline. We ensure safe, reliable, and convenient exchanges.</p>
+</div>
+<div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Email: support@moneywala.com</p>
+    <p>Phone: +123 456 7890</p>
+</div>
+
 </html>
